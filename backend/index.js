@@ -16,6 +16,7 @@ const app = express();
 const salt = bcrypt.genSaltSync(10);
 const secret = process.env.SECRET_KEY;
 
+
 const port = 4000;
 
 app.use(cors({credentials: true, origin: 'http://localhost:3000', "https://betsket.com"}));
